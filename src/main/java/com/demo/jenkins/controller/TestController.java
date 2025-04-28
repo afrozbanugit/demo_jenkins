@@ -15,7 +15,7 @@ public class TestController {
 	
 	@GetMapping("/test2")
 	public String test2() {
-		return "Test2 also Passed";
+		return "Test2 - for webhook";
 	}
 
 }
