@@ -19,7 +19,7 @@ public class TestController {
 	}
 	@GetMapping("/test3")
 	public String test2() {
-		return "Test3 - for webhook";
+		return "Test3 - for webhook123";
 	}
 
 }
