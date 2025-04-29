@@ -19,7 +19,7 @@ public class TestController {
 	}
 	@GetMapping("/test3")
 	public String test2() {
-		return "Test3 - 123";
+		return "Test3 - 29 Apr";
 	}
 
 }
