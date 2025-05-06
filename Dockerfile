@@ -30,4 +30,4 @@ COPY --from=build /app/target/demo-app-jenkins-1-0.0.1-SNAPSHOT.jar  /app/demo-a
 EXPOSE 8082
 
 # Run the application
-CMD ["java", "-jar", "myapp-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "demo-app-jenkins-1-0.0.1-SNAPSHOT.jar"]
