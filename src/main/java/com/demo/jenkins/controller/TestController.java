@@ -18,7 +18,7 @@ public class TestController {
 		return "Test2 - for webhook - test";
 	}
 	@GetMapping("/test3")
-	public String test2() {
+	public String test3() {
 		return "Test3 - 29 Apr";
 	}
 
