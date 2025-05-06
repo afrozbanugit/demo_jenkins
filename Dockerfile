@@ -24,7 +24,7 @@ FROM openjdk:17-jdk
 WORKDIR /app
 
 # Copy the packaged jar file from the build stage
-COPY --from=build /app/target/myapp-0.0.1-SNAPSHOT.jar  /app/myapp-0.0.1-SNAPSHOT.jar
+COPY --from=build /app/target/demo-app-jenkins-1-0.0.1-SNAPSHOTT.jar  /app/demo-app-jenkins-1-0.0.1-SNAPSHOT.jar
 
 # Expose the application port
 EXPOSE 8082
