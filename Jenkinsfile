@@ -27,7 +27,7 @@ pipeline {
         stage('Run Application') {
             steps {
                 script{
-                    sh 'cd $APP_DIR/target && java -jar $JAR_FILE'
+                    sh 'cd $APP_DIR/target'
                 }
             }
         }
