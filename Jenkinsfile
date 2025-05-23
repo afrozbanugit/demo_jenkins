@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment{
-	APP_DIR='/var/lib/jenkins/workspace/scripted_pipeline_myapp/demo_jenkins'
+	APP_DIR='/var/lib/jenkins/workspace/pipeline-demo/demo_jenkins'
 	JAR_FILE='demo-app-jenkins-1-0.0.1-SNAPSHOT.jar'
 	}
     stages {
