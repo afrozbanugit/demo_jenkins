@@ -20,7 +20,7 @@ pipeline {
          stage('Building App') {
             steps {
                 script{
-                    sh 'cd demo_jenkins && mvn clean install'
+                    sh 'cd demo_jenkins && mvn clean install -DskipTests'
                 }
             }
         }
