@@ -27,9 +27,9 @@ pipeline {
             steps {
                 script{
 					dir('target'){
-						bat 'java -jar $JAR_FILE'
+						bat 'java -jar "%JAR_FILE%"'
 					}
-                //    bat 'cd target && java -jar $JAR_FILE'
+                //    bat 'cd target && java -jar "%JAR_FILE%"'
                 }
             }
         }
