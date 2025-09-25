@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Cloning Git Repo') {
             steps {
-                    git branch:'main',url: "https://github.com/afrozbanugit/demo_jenkins.git"'
+                    git branch:'main',url: 'https://github.com/afrozbanugit/demo_jenkins.git'
                 }
         }
          stage('Building App') {
