@@ -26,7 +26,10 @@ pipeline {
         stage('Run Application') {
             steps {
                 script{
-                    bat 'cd $APP_DIR/target && java -jar $JAR_FILE'
+					dir('target'){
+						bat 'java -jar $JAR_FILE'
+					}
+                //    bat 'cd target && java -jar $JAR_FILE'
                 }
             }
         }
