@@ -18,7 +18,7 @@ pipeline {
          stage('Building App') {
             steps {
                 script{
-                    bat 'cd demo_jenkins && mvn clean install -DskipTests'
+                    bat 'mvn clean install -DskipTests'
                 }
             }
         }
