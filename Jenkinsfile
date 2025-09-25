@@ -4,6 +4,9 @@ pipeline {
 	APP_DIR='${WORKSPACE}/demo_jenkins'
 	JAR_FILE='demo-app-jenkins-1-0.0.1-SNAPSHOT.jar'
 	}
+	tools{
+		maven "mvn"
+	}
     stages {
          stage('Clean workspace'){
             steps{
