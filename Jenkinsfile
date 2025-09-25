@@ -17,15 +17,13 @@ pipeline {
         }
          stage('Building App') {
             steps {
-                script{
-                    bat 'mvn clean install -DskipTests'
-                }
+                    bat 'mvn clean install -DskipTests'                
             }
         }
         stage('Run Application') {
             steps {
                 script{
-                    sh 'cd $APP_DIR/target && java -jar $JAR_FILE'
+                    bat 'cd $APP_DIR/target && java -jar $JAR_FILE'
                 }
             }
         }
